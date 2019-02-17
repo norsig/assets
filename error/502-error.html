@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="502 Bad Gateway">
+<title>502 Bad Gateway</title>
+<!-- Bootstrap core CSS -->
+<link rel="stylesheet" href="https://assets.norsig.com/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://assets.norsig.com/css/logotype.min.css">
+
+<style>
+/* Error Page Inline Styles */
+body {
+  padding-top: 20px;
+}
+/* Layout */
+.jumbotron {
+  font-size: 21px;
+  font-weight: 200;
+  line-height: 2.1428571435;
+  color: inherit;
+  padding: 10px 0px;
+}
+/* Everything but the jumbotron gets side spacing for mobile-first views */
+.masthead, .body-content, {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  background-color: transparent;
+}
+.jumbotron .btn {
+  font-size: 18px;
+  padding: 10px 20px;
+}
+/* Colors */
+.green {color:#5cb85c;}
+.orange {color:#f0ad4e;}
+.red {color:#d9534f;}
+</style>
+<script type="text/javascript">
+  function loadDomain() {
+    var display = document.getElementById("display-domain");
+    display.innerHTML = document.domain;
+  }
+</script>
+
+</head>
+<body onload="javascript:loadDomain();">
+<!-- Error Page Content -->
+<div class="container">
+  <!-- Jumbotron -->
+  <div class="jumbotron">
+      <h2><center><i class="ns ns-no1 red"></i><span class="logo-text red">&nbspNORTHERN SIGNAL</span></center></h2>
+    <h1><i class="ns ns-bolt orange"></i> 502 Bad Gateway</h1>
+    <p class="lead">The web server is returning an unexpected networking error for <em><span id="display-domain"></span></em>.</p>
+    <p><button onclick="javascript:document.location.reload(true);" class="btn btn-primary">Try This Page Again</button>
+  </div>
+</div>
+<div class="container">
+  <div class="body-content">
+    <div class="row">
+      <div class="col-md-6">
+        <h2>What happened?</h2>
+        <p class="lead">A 502 error status implies that that the server received an invalid response from an upstream server it accessed to fulfill the request.</p>
+      </div>
+      <div class="col-md-6">
+        <h2>What can I do?</h2>
+        
+        <p><button onclick=javascript:checkSite(); class="btn btn-sm btn-success">Check if this website is down for everyone</button>
+          <script type="text/javascript">
+              function checkSite(){
+                var currentSite = window.location.hostname;
+                  window.location = "http://isup.me/" + currentSite;
+              }
+          </script></p>
+        <p>Also, clearing your browser cache and refreshing the page may clear this issue. If the problem persists and you need immediate assistance, please <a href="mailto:&#119;&#101;&#098;&#064;&#110;&#111;&#114;&#116;&#104;&#101;&#114;&#110;&#115;&#105;&#103;&#110;&#097;&#108;&#046;&#099;&#111;&#109;">send us an email</a>.</p>
+     </div>
+    </div>
+		<p><center>SignalOS Server 1.16 © 2018 Northern Signal, All Rights Reserved.</p></center>
+  </div>
+</div>
+
+<!-- End Error Page Content -->
+<!--Scripts-->
+<!-- jQuery library -->
+<script src="https://assets.norsig.com/js/jquery.min.js"></script>
+<script src="https://assets.norsig.com/js/bootstrap.min.js"></script>
+</body>
+</html>

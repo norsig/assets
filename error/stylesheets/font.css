@@ -1,0 +1,15 @@
+/*! January 1, 2018 */
+
+}
+.norsig-brand {
+	font-family: 'northernsignallogo';
+    src: url('https://assets.norsig.com/fonts/northernsignallogo-webfont.eot');
+    src: url('https://assets.norsig.com/fonts/northernsignallogo-webfont.eot?#iefix') format('embedded-opentype'),
+         url('https://assets.norsig.com/fonts/northernsignallogo-webfont.woff2') format('woff2'),
+         url('https://assets.norsig.com/fonts/northernsignallogo-webfont.woff') format('woff'),
+         url('https://assets.norsig.com/fonts/northernsignallogo-webfont.ttf') format('truetype'),
+         url('https://assets.norsig.com/fonts/northernsignallogo-webfont.svg#northernsignallogoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+	p { font-family: 'northernsignallogo', Arial, sans-serif; }
+}
